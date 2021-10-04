@@ -1,7 +1,8 @@
 import {
     ADD_USER,
     GET_USER,
-    UsersDispatchTypes
+    UsersDispatchTypes,
+    UPDATE_MESSAGES_USER
    } from "../types/users";
 import { UsersType } from "../types/users";
 
@@ -20,6 +21,10 @@ const usersReducer = (state = initialState , action: UsersDispatchTypes)  => {
        case GET_USER:
          return {
            users : action.payload
+         }
+       case UPDATE_MESSAGES_USER:
+         return {
+           users: action.payload
          }
        default:
          return state

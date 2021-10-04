@@ -8,7 +8,8 @@ export const createUser = () => async (dispatch : Dispatch<UserDispatchTypes>)=>
         payload: {
             id:generateID(),
             name:generateName(),
-            messages: []
+            messages: [],
+            typeUser:'user'
         }
     })
 }

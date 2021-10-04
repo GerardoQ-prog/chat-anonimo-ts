@@ -6,7 +6,8 @@ export const RENAME_USER = "RENAME_USER"
 export type UserType = {
     id : number,
     name : string,
-    messages : MessageType[] 
+    messages : MessageType[],
+    typeUser:string
 }
 
 export interface UserCreate {

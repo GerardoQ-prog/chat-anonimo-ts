@@ -24,6 +24,7 @@ export const ContainerInput = styled.div`
 export const ContainerMessages = styled.div`
     flex-grow: 1;
     overflow-y: scroll;
+    height: 60vh;
 `
 export const ContainerName = styled.div`
     background: ${props => props.theme.colors.input};

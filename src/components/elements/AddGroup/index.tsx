@@ -26,6 +26,7 @@ const AddGroup = () => {
       id: generateID(),
       name: nameGroup,
       messages: [],
+      typeUser: "group",
     };
     dispatch(addNewGroup(newGroup));
     localStorage.setItem(

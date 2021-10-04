@@ -8,7 +8,8 @@ import {
 const initialState: UserType = {
   id:0,
   name:'',
-  messages:[]
+  messages:[],
+  typeUser: ''
 }
   
 const userReducer = (state = initialState, action: UserDispatchTypes)  => {

@@ -5,12 +5,14 @@ const initialState: GroupsType = {
        {
            id:1,
            name:'Grupo de Matematica',
-           messages: []
+           messages: [],
+           typeUser:'group'
        },
        {
             id:2,
             name:'Grupo de Ciencia',
-            messages: []
+            messages: [],
+           typeUser:'group'
         },
    ]
  }

@@ -29,7 +29,7 @@ const AppRoutes: React.FC = () => {
     const groupsSave = localStorage.getItem("groups_chat");
     dispatch(createUser());
     if (!groupsSave) {
-      localStorage.setItem("groups_chat", JSON.stringify(groups));
+      localStorage.setItem("groups_chat", JSON.stringify(groups.groups));
     }
   }, []);
 

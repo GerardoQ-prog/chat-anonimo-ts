@@ -2,11 +2,11 @@ import { UserType } from "./user"
 
 export const ADD_USER = "ADD_USER"
 export const GET_USER = "GET_USER"
+export const UPDATE_MESSAGES_USER = "UPDATE_MESSAGES_USER"
 
 export type UsersType = {
     users : UserType[] 
 }
-
 export interface UsersAdd {
     type : typeof ADD_USER,
     payload: UserType
@@ -17,4 +17,9 @@ export interface UsersGet {
     payload: UserType[]
 }
 
-export type UsersDispatchTypes = UsersAdd | UsersGet
+export interface UsersUpdateMessages {
+    type : typeof UPDATE_MESSAGES_USER,
+    payload: UserType[] 
+}
+
+export type UsersDispatchTypes = UsersAdd | UsersGet | UsersUpdateMessages

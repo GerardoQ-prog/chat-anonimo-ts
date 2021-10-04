@@ -1,4 +1,4 @@
-import { MessageType, ChatDispatchTypes,SELECT_CHAT, ADD_MESSAGE, ChatType } from "../types/messages";
+import { ChatDispatchTypes,SELECT_CHAT, ADD_MESSAGE } from "../types/messages";
 
 const initialState: any = null
 

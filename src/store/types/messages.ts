@@ -4,7 +4,8 @@ export const ADD_MESSAGE = "ADD_MESSAGE"
 export type ChatType = {
     id : number,
     name : string,
-    messages: MessageType[]
+    messages: MessageType[],
+    typeUser:string
 }
 
 export type MessageType = {
